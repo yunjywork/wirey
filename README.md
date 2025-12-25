@@ -102,7 +102,6 @@ Test your messages locally with the integrated echo server:
 
 ## Roadmap
 
-- [x] Message Variables - Dynamic content in messages
 - [ ] Script Engine - Pre/Post message transformation
 - [ ] Load Testing - Concurrent connection stress testing
 
