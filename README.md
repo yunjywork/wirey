@@ -66,6 +66,23 @@ Use built-in variables in your messages for dynamic content:
 - `{{counter}}` - Auto-incrementing counter
 - And more...
 
+### 📜 Scripts
+
+Transform and automate your messages with JavaScript:
+
+<p align="center">
+  <img src="screenshot/script.png" alt="Scripts" width="600">
+</p>
+
+| Script Type | Description |
+| ----------- | ----------- |
+| Setup | Initialize variables before sending |
+| Pre-send | Transform message before transmission |
+| Post-recv | Extract values from received messages |
+
+- **Dry Run** mode to test scripts without sending
+- Built-in API for variable manipulation and HTTP requests
+
 ### 🌍 30+ Character Encodings
 
 - **Unicode**: UTF-8, UTF-16, UTF-16LE, UTF-16BE
@@ -78,13 +95,16 @@ Use built-in variables in your messages for dynamic content:
 Test your messages locally with the integrated echo server:
 
 <p align="center">
-  <img src="screenshot/echoserver.png" alt="Echo Server" width="500">
+  <img src="screenshot/echoserver.png" alt="Echo Server" width="600">
 </p>
+
 
 ### 🛠 Developer-Friendly
 
 - **Text ↔ Hex** real-time conversion
 - **Wireshark-style** hex dump view
+- **Hex Dump Parser** - Paste hex dump to create messages
+- **Notes Editor** - Markdown notes with edit/preview mode
 - Message search and filtering
 - Dark/Light theme support
 - Organized test cases with Collections
@@ -102,7 +122,6 @@ Test your messages locally with the integrated echo server:
 
 ## Roadmap
 
-- [ ] Script Engine - Pre/Post message transformation
 - [ ] Load Testing - Concurrent connection stress testing
 
 ---
