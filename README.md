@@ -9,6 +9,7 @@
 <p align="center">
   <a href="https://github.com/yunjywork/wirey/releases/latest"><img src="https://img.shields.io/github/v/release/yunjywork/wirey?style=flat-square" alt="Release"></a>
   <a href="https://github.com/yunjywork/wirey/releases"><img src="https://img.shields.io/github/downloads/yunjywork/wirey/total?style=flat-square" alt="Downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/yunjywork/wirey?style=flat-square" alt="License"></a>
   <a href="https://www.buymeacoffee.com/yunjywork"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-yellow?style=flat-square&logo=buy-me-a-coffee" alt="Buy Me A Coffee"></a>
 </p>
 
@@ -98,7 +99,6 @@ Test your messages locally with the integrated echo server:
   <img src="screenshot/echoserver.png" alt="Echo Server" width="600">
 </p>
 
-
 ### 🛠 Developer-Friendly
 
 - **Text ↔ Hex** real-time conversion
@@ -120,9 +120,41 @@ Test your messages locally with the integrated echo server:
 
 ---
 
+## Building from Source
+
+### Prerequisites
+
+- [Go](https://go.dev/) 1.24+
+- [Node.js](https://nodejs.org/) 18+
+- [Wails](https://wails.io/) v2 — `go install github.com/wailsapp/wails/v2/cmd/wails@latest`
+
+### Build
+
+```bash
+# Clone the repository
+git clone https://github.com/yunjywork/wirey.git
+cd wirey
+
+# Build (fast — skips binding/embed generation)
+wails build -skipbindings -skipembedcreate
+
+# Full build (required when Go API changes)
+wails build
+```
+
+The output binary will be at `build/bin/`.
+
+---
+
 ## Roadmap
 
 - [ ] Load Testing - Concurrent connection stress testing
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ---
 
@@ -138,7 +170,6 @@ If you find Wirey useful, consider supporting the project!
 
 ## License
 
-Free to use for personal and commercial purposes.
-All rights reserved.
+MIT License — see [LICENSE](LICENSE) for details.
 
 <p align="center">Made with ❤️ for developers who test sockets</p>

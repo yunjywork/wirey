@@ -1,3 +1,116 @@
+# ====================
+# Wails
+# ====================
+build/bin/
+build/darwin/
+build/windows/
+build/linux/
 dist/
-release/
+*.syso
+
+# ====================
+# Go
+# ====================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+vendor/
+
+# ====================
+# Node.js / Frontend
+# ====================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.pnpm-store/
+.npm/
+*.tsbuildinfo
+
+# ====================
+# IDE / Editor
+# ====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# OS Generated
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ====================
+# Logs
+# ====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ====================
+# Environment / Config
+# ====================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.local
+
+# ====================
+# Test / Coverage
+# ====================
+coverage/
+*.cover
+*.out
+.nyc_output/
+
+# ====================
+# Cache
+# ====================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tscache/
+
+# ====================
+# Misc
+# ====================
+*.bak
+*.tmp
+*.temp
+.claude/
+
+# ====================
+# Release Builds
+# ====================
 builds/
+
+# ====================
+# Internal / Claude Code
+# ====================
+CLAUDE.md
+docs/
